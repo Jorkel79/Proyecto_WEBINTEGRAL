@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 //importar el archivo
 
 
+// Crear una instancia de la aplicación Express
 const app = express();
 
 //middlewares
