@@ -11,10 +11,7 @@
     <section class="left-form">
 
     </section>
-
     <section class="right-form">
-
-
     <form action="" method="post">
 
         <img src="css/secupasslogo.png" alt="Logo" class="mobile-logo">
