@@ -5,6 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 //importar el archivo
+const usersRoutes = require('./routes/usersRoutes');
 
 
 // Crear una instancia de la aplicación Express
@@ -13,7 +14,8 @@ const app = express();
 //middlewares
 app.use(bodyParser.json());//se establece el formato de los datos
 
-//agregar añ middleware el objeto
+//agregar al middleware el objeto
+app.use('/users', usersRoutes);
 
 
 const PORT = 3000;
