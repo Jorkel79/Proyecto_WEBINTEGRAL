@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
     <section class="left-form">
 
@@ -15,27 +17,32 @@
     <section class="right-form">
 
 
-    <form action="" method="post">
+        <form action="" id="loginForm" method="POST">
 
-        <img src="css/secupasslogo.png" alt="Logo" class="mobile-logo">
+            <img src="css/secupasslogo.png" alt="Logo" class="mobile-logo">
 
-        <h1>SECUPASS</h1>
+            <h1>SECUPASS</h1>
 
-        <h2>Login</h2>
+            <h2>Login</h2>
 
-        <label for="user">Email</label>
-        <input type="text" name="user" id="user">
+            <label for="user">Username</label>
+            <input type="text" name="username" id="username" required>
 
-        <label for="pwd">Password</label>
-        <input type="password" name="pwd" id="pwd">
+            <label for="pwd">Password</label>
+            <input type="password" name="password" id="password" required>
 
-        <div class="check">
-        <a href="#">Registrarse</a></li>
-        </div>
+            <div class="check">
+                <a href="#">Registrarse</a></li>
+            </div>
 
-        <input type="submit" value="ingresar" name="entrar">
+            <input type="submit" value="ingresar" name="entrar">
 
-    </form>
+        </form>
+
     </section>
+
+    <script src="js/login.js"></script>
+
 </body>
+
 </html>
