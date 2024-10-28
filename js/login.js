@@ -1,4 +1,3 @@
-
 document.getElementById("loginForm").addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -8,16 +7,18 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
 
     try {
         // Enviar solicitud de login
-        const response = await fetch('/login', {
+        const response = await fetch('http://localhost:3000/users/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ username, password })
         });
 
         if (response.ok) {
-            alert("Login Exitoso, Vienvenido!");
+            alert("Login Exitoso, Bienvenido!");
+        } else if (response.status === 401) {
+            alert("Usuario o contraseña incorrectos");
         } else {
-            alert("Correo o Contraseña Incorrecto!");
+            alert("Hubo un problema con la solicitud");
         }
     } catch (error) {
         console.error("Error de red", error);
