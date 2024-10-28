@@ -1,27 +1,31 @@
-document.getElementById("loginForm").addEventListener("submit", async (event) => {
-    event.preventDefault();
+document.getElementById('loginForm').addEventListener('submit', async function (e) {
+    e.preventDefault(); // Previene el envío del formulario por defecto
 
-    // Obtener los datos de entrada
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    // Obtén los valores de los campos del formulario
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
 
+    // Realiza la solicitud POST al servidor
     try {
-        // Enviar solicitud de login
         const response = await fetch('http://localhost:3000/users/login', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username, password })
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, password }),
         });
 
-        if (response.ok) {
+        const data = await response.json();
+
+        // Manejar la respuesta del servidor
+        if (response.ok) { // Verifica si la respuesta fue exitosa
             alert("Login Exitoso, Bienvenido!");
-        } else if (response.status === 401) {
-            alert("Usuario o contraseña incorrectos");
+            // Redirigir o realizar otras acciones
         } else {
-            alert("Hubo un problema con la solicitud");
+            alert(data.message); // Muestra el mensaje de error del servidor
         }
     } catch (error) {
-        console.error("Error de red", error);
-        alert("Hubo un problema con la solicitud");
+        console.error('Error:', error);
+        alert('Hubo un problema al intentar iniciar sesión.');
     }
 });
