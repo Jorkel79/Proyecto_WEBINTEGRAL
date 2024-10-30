@@ -13,13 +13,12 @@
     <section class="left-form">
 
     </section>
-
     <section class="right-form">
-
 
         <form action="" id="loginForm" method="POST">
 
             <img src="css/secupasslogo.png" alt="Logo" class="mobile-logo">
+
 
             <h1>SECUPASS</h1>
 
