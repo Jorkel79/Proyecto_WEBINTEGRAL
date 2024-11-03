@@ -10,7 +10,7 @@ function generatePassword() {
     let characters = 'abcdefghijklmnopqrstuvwxyz';
     if (includeNumbers) characters += '0123456789';
     if (includeUppercase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    if (includeSpecial) characters += '!@#$%^&*()_+-=[]{}|;:,.<>?';
+    if (includeSpecial) characters += '¿?¡!-_.: *@$/';
 
     //El randomizador para la contraseña
     const passwordLength = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
