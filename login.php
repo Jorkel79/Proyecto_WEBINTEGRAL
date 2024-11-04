@@ -31,7 +31,7 @@
             <input type="password" name="password" id="password" required>
 
             <div class="check">
-                <a href="./register.php">Registrarse</a></li>
+                <a href="./register.php">Registrarse</a>
             </div>
 
             <input type="submit" value="ingresar" name="entrar">
