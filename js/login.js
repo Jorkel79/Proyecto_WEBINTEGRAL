@@ -1,3 +1,4 @@
+console.log("login.js se está cargando correctamente.");
 document.getElementById('loginForm').addEventListener('submit', async function (e) {
     e.preventDefault(); // Previene el envío del formulario por defecto
 
@@ -7,6 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
     // Realiza la solicitud POST al servidor
     try {
+        console.log("Intentando conectar con el servidor Node.js...");
         const response = await fetch('http://localhost:3000/users/login', {
             method: 'POST',
             headers: {
@@ -20,7 +22,9 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         // Manejar la respuesta del servidor
         if (response.ok) { // Verifica si la respuesta fue exitosa
             alert("Login Exitoso, Bienvenido!");
-            // Redirigir o realizar otras acciones
+            console.log("Redireccionando a index.php...");
+            //redirigir al index
+            window.location.replace('http://localhost/Proyecto_WEBINTEGRAL/index.php');
         } else {
             alert(data.message); // Muestra el mensaje de error del servidor
         }
