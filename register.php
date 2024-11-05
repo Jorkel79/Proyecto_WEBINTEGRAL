@@ -33,6 +33,9 @@
     </section>
     <section class="right-form">
     </section>
+
+    <script src="js/register.js?v=1"></script>
+
 </body>
 
 </html>
