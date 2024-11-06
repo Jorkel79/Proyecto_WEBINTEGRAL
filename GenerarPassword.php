@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="secupasslogo.png" alt="Logo">
+        <img src="css/secupasslogo.png" alt="Logo">
         <h1>Generador de Contraseñas</h1>
         <div class="header-buttons">
             <a href="#">Inicio</a>
