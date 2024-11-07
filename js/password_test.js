@@ -6,7 +6,7 @@ function generatePassword() {
     const includeUppercase = document.getElementById('includeUppercase').checked;
     const includeSpecial = document.getElementById('includeSpecial').checked;
 
-// Los caracteres que podemos usar en la contraseña
+    // Los caracteres que podemos usar en la contraseña
     let characters = 'abcdefghijklmnopqrstuvwxyz';
     if (includeNumbers) characters += '0123456789';
     if (includeUppercase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
