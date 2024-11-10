@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="PerfilUsuario.css">
+    <link rel="stylesheet" href="css/PerfilUsuario.css">
 </head>
 <body>
 <div>
@@ -19,7 +19,7 @@
 </div>
 <div class="tarjeta">
     <div class="foto">
-      <img src="fotoUsuario.png" alt="Foto del usuario">
+      <img src="css/fotoUsuario.png" alt="Foto del usuario">
     </div>
     <div class="contenido">
       <h2 class="nombre">Nombre de Usuario</h2>
