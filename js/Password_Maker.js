@@ -1,5 +1,6 @@
 
 function generatePassword() {
+    console.log("Generating password");
     const minLength = parseInt(document.getElementById('minLength').value);
     const maxLength = parseInt(document.getElementById('maxLength').value);
     const includeNumbers = document.getElementById('includeNumbers').checked;
@@ -21,4 +22,5 @@ function generatePassword() {
 
     // Para que aparezca en el div
     document.getElementById('passwordOutput').textContent = password;
+    console.log("Password Generated");
 }
