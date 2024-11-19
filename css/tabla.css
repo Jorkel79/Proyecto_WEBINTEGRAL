@@ -1,0 +1,164 @@
+/* Fondo del body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+    background-attachment: fixed;
+    padding-top: 60px; /* Espacio para que el contenido no quede oculto por el header */
+}
+
+/* Estilo del header */
+header {
+    background-color: rgb(128, 99, 202);
+    color: white;
+    padding: 8px 0; /* Altura reducida */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para separar el header */
+}
+
+header img {
+    width: 80px; /* Tamaño del logo ajustado */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 20px; /* Tamaño del texto reducido */
+}
+
+.header-buttons {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.header-buttons a {
+    background-color: #580087;
+    color: white;
+    padding: 6px 14px; /* Botones más compactos */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.header-buttons .exit-button {
+    background-color: red;
+}
+
+.header-buttons a:hover {
+    background-color: #2d0045;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    margin: 80px auto 20px; /* Márgen superior para evitar solapamiento */
+}
+
+/* Estilo de la tabla */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #333;
+}
+
+/* Encabezado de la tabla */
+.styled-table thead tr {
+    background-color: rgba(128, 99, 202, 0.8); /* Morado oscuro semitransparente */
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Celdas */
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.styled-table tbody tr {
+    background-color: rgba(198, 157, 243, 0.6); /* Fondo morado claro */
+    border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: rgba(198, 157, 243, 0.4); /* Alterna el color */
+}
+
+.styled-table tbody tr:hover {
+    background-color: rgba(175, 138, 230, 0.8); /* Efecto hover */
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(128, 99, 202);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Botones de acciones */
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit {
+    background-color: #28a745; /* Verde */
+}
+
+.btn-edit:hover {
+    background-color: #218838; /* Verde oscuro al pasar el cursor */
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Rojo */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Rojo oscuro al pasar el cursor */
+}
+
+/* Iconos dentro de los botones */
+.btn i {
+    font-size: 16px;
+}
