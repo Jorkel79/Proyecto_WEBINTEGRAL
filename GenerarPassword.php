@@ -14,6 +14,7 @@
         <h1>Generador de Contraseñas</h1>
         <div class="header-buttons">
             <a href="#">Inicio</a>
+            <a href="./TablaDeRegistros.php">Contraseñas generadas</a>
             <a href="#" class="exit-button">Salir</a>
         </div>
     </header>
