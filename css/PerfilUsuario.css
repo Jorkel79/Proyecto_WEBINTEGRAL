@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  header {
+    width: 100vw;
+    background-color: rgb(128, 99, 202);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    left: 0; 
+  }
+  
+  header img {
+    width: 100px;
+  }
+  
+  .header-buttons {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  
+  .header-buttons a {
+    background-color: #580087;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .header-buttons .exit-button {
+    background-color: red;
+  }
+  
+  .header-buttons a:hover {
+    background-color: #2d0045;
+  }
+  
+  .tarjeta {
+    width: 100%;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .tarjeta:hover {
+    transform: scale(1.05);
+  }
+  
+  .foto {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f5;
+  }
+  
+  .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .contenido {
+    padding: 20px;
+  }
+  
+  .nombre {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .correo,
+  .contraseña {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 480px) {
+    .tarjeta {
+      max-width: 90%;
+    }
+  
+    .nombre {
+      font-size: 1.2em;
+    }
+  
+    .correo,
+    .contraseña {
+      font-size: 0.9em;
+    }
+  }
+  

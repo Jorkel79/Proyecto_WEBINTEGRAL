@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,7 +50,7 @@ body {
     font-weight: bold;
 }
 
-.left-form form > input {
+.left-form form>input {
     width: 100%;
     padding: 10px 0;
     font-size: 1.2em;
