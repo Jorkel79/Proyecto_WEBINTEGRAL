@@ -1,12 +1,13 @@
 
 function generatePassword() {
+    console.log("Generating password");
     const minLength = parseInt(document.getElementById('minLength').value);
     const maxLength = parseInt(document.getElementById('maxLength').value);
     const includeNumbers = document.getElementById('includeNumbers').checked;
     const includeUppercase = document.getElementById('includeUppercase').checked;
     const includeSpecial = document.getElementById('includeSpecial').checked;
 
-// Los caracteres que podemos usar en la contraseña
+    // Los caracteres que podemos usar en la contraseña
     let characters = 'abcdefghijklmnopqrstuvwxyz';
     if (includeNumbers) characters += '0123456789';
     if (includeUppercase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -21,4 +22,5 @@ function generatePassword() {
 
     // Para que aparezca en el div
     document.getElementById('passwordOutput').textContent = password;
+    console.log("Password Generated");
 }
