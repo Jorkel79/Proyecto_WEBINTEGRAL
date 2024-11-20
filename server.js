@@ -10,6 +10,9 @@ const cors = require('cors');
 //importar el archivo
 const usersRoutes = require('./routes/usersRoutes');
 
+const passwordsRoutes = require('./routes/passwordsRoutes'); // Importa las rutas de contraseñas
+
+
 // Crear una instancia de la aplicación Express
 const app = express();
 
@@ -22,6 +25,7 @@ app.use(bodyParser.json());//se establece el formato de los datos
 //agregar al middleware el objeto
 app.use('/users', usersRoutes);
 
+app.use('/passwords', passwordsRoutes);
 
 const PORT = 3000;
 
