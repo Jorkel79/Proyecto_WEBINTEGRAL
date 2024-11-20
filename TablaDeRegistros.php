@@ -17,6 +17,7 @@
     </div>
 </header>
 <div class="table-container">
+    <button id="add-button" class="btn btn-add"><i class="fas fa-plus"></i> Añadir Contraseña</button>
     <table class="styled-table">
         <thead>
             <tr>
@@ -25,23 +26,8 @@
                 <th>Acciones</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>Fila 1, Celda 1</td>
-                <td>Fila 1, Celda 2</td>
-                <td>
-                    <button class="btn btn-edit"><i class="fas fa-edit"></i> Editar</button>
-                    <button class="btn btn-delete"><i class="fas fa-trash-alt"></i> Eliminar</button>
-                </td>
-            </tr>
-            <tr>
-                <td>Fila 2, Celda 1</td>
-                <td>Fila 2, Celda 2</td>
-                <td>
-                    <button class="btn btn-edit"><i class="fas fa-edit"></i> Editar</button>
-                    <button class="btn btn-delete"><i class="fas fa-trash-alt"></i> Eliminar</button>
-                </td>
-            </tr>
+        <tbody id="table-body">
+            <!-- Aquí las filas serán generadas dinámicamente con JavaScript -->
         </tbody>
     </table>
 </div>
@@ -51,8 +37,8 @@
     <p>&copy; 2024 Generador de Contraseñas</p>
     <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
 </footer>
+
+<!-- Enlace al archivo JavaScript -->
+<script src="./js/crud.js" defer></script>
 </body>
 </html>
-
-
-
