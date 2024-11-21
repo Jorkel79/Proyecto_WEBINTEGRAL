@@ -16,16 +16,18 @@
 </head>
 
 <body>
-    <header>
-        <img src="css/secupasslogo.png" alt="Logo">
-        <h1>Generador de Contraseñas</h1>
-        <div class="header-buttons">
-            <a href="#">Inicio</a>
-            <a href="./TablaDeRegistros.php">Contraseñas generadas</a>
-            <a href="#" class="exit-button">Salir</a>
-        </div>
-
-    </header>
+<header>
+    <img src="css/secupasslogo.png" alt="Logo">
+    <h1>Generador de Contraseña</h1>
+    <div class="header-buttons">
+      <a href="TablaDeRegistros.php" title="Inicio">
+        <img src="css/Home.png" alt="Botón de inicio">
+      </a>
+      <a href="#" class="exit-button" title="Cerrar sesion">
+        <img src="css/CerrarSesion.png" alt="Botón de salir">
+      </a>
+    </div>
+  </header>
 
     <main>
         <div class="password-generator">
