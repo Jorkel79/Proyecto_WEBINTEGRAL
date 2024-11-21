@@ -10,14 +10,15 @@
 <body>
 <header>
     <img src="css/secupasslogo.png" alt="Logo">
-    <h1>Contraseñas Creadas</h1>
+    <h1>Perfil De Usuario</h1>
     <div class="header-buttons">
-        <a href="./GenerarPassword.php">Inicio</a>
-        <a href="#" class="exit-button">Salir</a>
+      <a href="#" class="exit-button" title="Cerrar sesion">
+        <img src="css/CerrarSesion.png" alt="Botón de salir">
+      </a>
     </div>
-</header>
+  </header>
 <div class="table-container">
-    <button id="add-button" class="btn btn-add"><i class="fas fa-plus"></i> Añadir Contraseña</button>
+    <button onclick="location.href='GenerarPassword.php'" id="add-button" class="btn btn-add"><i class="fas fa-plus"></i> Añadir Contraseña</button>
     <table class="styled-table">
         <thead>
             <tr>
