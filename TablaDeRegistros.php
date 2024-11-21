@@ -10,7 +10,7 @@
 <body>
 <header>
     <img src="css/secupasslogo.png" alt="Logo">
-    <h1>Perfil De Usuario</h1>
+    <h1>Contraseñas creadas</h1>
     <div class="header-buttons">
       <a href="#" class="exit-button" title="Cerrar sesion">
         <img src="css/CerrarSesion.png" alt="Botón de salir">
