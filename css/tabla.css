@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
 /* Fondo del body */
 body {
     font-family: Arial, sans-serif;
@@ -6,59 +12,61 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-   
     background-attachment: fixed;
-    padding-top: 60px; /* Espacio para que el contenido no quede oculto por el header */
+    padding-top: 0px; /* Espacio para que el contenido no quede oculto por el header */
 }
 
-/* Estilo del header */
 header {
+    width: 100vw;
     background-color: rgb(128, 99, 202);
     color: white;
-    padding: 8px 0; /* Altura reducida */
+    padding: 15px 0;
     text-align: center;
-    position: fixed;
-    top: 0;
+    position: relative;
     left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para separar el header */
 }
 
 header img {
-    width: 80px; /* Tamaño del logo ajustado */
+    width: 100px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 20px; /* Tamaño del texto reducido */
-}
-
+/* Contenedor de botones */
 .header-buttons {
     position: absolute;
-    top: 8px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px;
+    top: 10px;
+    right: 15px; /* Mueve el contenedor al lado derecho */
+    display: flex; /* Asegura que los elementos dentro del contenedor sigan alineados */
+    gap: 10px; /* Espaciado opcional entre botones */
 }
 
+/* Estilo de los botones */
 .header-buttons a {
-    background-color: #580087;
-    color: white;
-    padding: 6px 14px; /* Botones más compactos */
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
 }
 
-.header-buttons .exit-button {
-    background-color: red;
+/* Estilo de las imágenes */
+.header-buttons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.header-buttons a:hover {
-    background-color: #2d0045;
+/* Efecto hover */
+.header-buttons a:hover img {
+    transform: scale(1.3);
+    filter: brightness(1.9);
+}
+
+/* Resaltado para el botón de salir */
+.header-buttons .exit-button img {
+    border: none;
 }
 
 /* Contenedor de la tabla */
