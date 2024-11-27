@@ -60,6 +60,8 @@
             <!-- La contraseña -->
             <div class="output" id="passwordOutput">Contraseña</div>
 
+            <button class="btn btn-primary" onclick="">Guardar Contraseña</button>
+
         </div>
 
     </main>
