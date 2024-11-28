@@ -34,12 +34,14 @@ header img {
 .header-buttons {
     position: absolute;
     top: 10px;
-    right: 15px; /* Mueve el contenedor al lado derecho */
-    display: flex; /* Asegura que los elementos dentro del contenedor sigan alineados */
-    gap: 10px; /* Espaciado opcional entre botones */
+    left: 15px;
+    right: 15px;
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: space-between; /* Coloca los botones en los extremos */
+    align-items: center; /* Alinea verticalmente */
 }
 
-/* Estilo de los botones */
+/* Estilo de los botones, aplicable a todos */
 .header-buttons a {
     display: inline-block;
     width: 50px;
@@ -50,7 +52,7 @@ header img {
     border-radius: 0;
 }
 
-/* Estilo de las imágenes */
+/* Estilo de las imágenes dentro de los botones */
 .header-buttons a img {
     width: 100%;
     height: 100%;
@@ -64,8 +66,8 @@ header img {
     filter: brightness(1.9);
 }
 
-/* Resaltado para el botón de salir */
-.header-buttons .exit-button img {
+/* Botón específico para "Regresar" */
+.header-buttons .back-button img {
     border: none;
 }
 

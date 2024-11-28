@@ -8,17 +8,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <img src="css/secupasslogo.png" alt="Logo">
-    <h1>Contraseñas creadas</h1>
-    <div class="header-buttons">
-      <a href="#" class="exit-button" title="Cerrar sesion">
-        <img src="css/CerrarSesion.png" alt="Botón de salir">
-      </a>
-    </div>
-  </header>
+    <header>
+        <img src="css/secupasslogo.png" alt="Logo">
+        <h1>Contraseñas creadas</h1>
+        <div class="header-buttons">
+            <!-- Botón de regresar -->
+            <a href="./login.html" class="back-button" title="Regresar">
+                <img src="css/CerrarSesion.png" alt="Botón de regresar">
+            </a>
+            <!-- Botón de salir -->
+            <a href="./login.html" class="exit-button" title="Cerrar sesión">
+                <img src="css/CerrarSesion.png" alt="Botón de salir">
+            </a>
+        </div>
+    </header>
+    
+    
 <div class="table-container">
-    <button onclick="location.href='GenerarPassword.php'" id="add-button" class="btn btn-add"><i class="fas fa-plus"></i> Añadir Contraseña</button>
+    <button onclick="location.href='GenerarPassword.html'" id="add-button" class="btn btn-add"><i class="fas fa-plus"></i> Añadir Contraseña</button>
     <table class="styled-table">
         <thead>
             <tr>
