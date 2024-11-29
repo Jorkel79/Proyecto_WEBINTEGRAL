@@ -31,7 +31,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
             alert("Registro Exitoso, Ya Puede Iniciar Sesion!");
             console.log("Redireccionando a login.php...");
             //redirigir al login
-            window.location.replace('http://localhost/Proyecto_WEBINTEGRAL/login.php');
+            window.location.replace('http://localhost/Proyecto_WEBINTEGRAL/login.html');
         } else {
             alert(data.message); // Muestra el mensaje de error del servidor
         }

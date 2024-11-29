@@ -24,7 +24,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
             alert("Login Exitoso, Bienvenido!");
             console.log("Redireccionando a index.php...");
             //redirigir al index
-            window.location.replace('http://localhost/Proyecto_WEBINTEGRAL/GenerarPassword.php');
+            window.location.replace('http://localhost/Proyecto_WEBINTEGRAL/GenerarPassword.html');
         } else {
             alert(data.message); // Muestra el mensaje de error del servidor
         }
