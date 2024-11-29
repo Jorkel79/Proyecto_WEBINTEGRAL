@@ -4,6 +4,7 @@ const passwordsController = require('../controllers/passwordsController'); // Im
 
 // Rutas para contraseñas
 router.get('/', passwordsController.getAllPasswords);
+router.post('/', passwordsController.createPassword);
 router.post('/', passwordsController.addPassword);
 router.put('/:id', passwordsController.updatePassword);
 router.delete('/:id', passwordsController.deletePassword);

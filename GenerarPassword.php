@@ -11,8 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/GeneradorPassword.css?v=1.1" rel="stylesheet">
 
-    <script src="js/Password_Maker.js"></script>
-
 </head>
 
 <body>
@@ -57,7 +55,7 @@
                 </label>
             </div>
 
-            <button class="btn btn-primary" onclick="generatePassword()">Generar Contraseña</button>
+            <button class="btn btn-primary" id="generatePassword">Generar Contraseña</button>
 
             <!-- La contraseña -->
             <div class="output" id="passwordOutput">Contraseña</div>
