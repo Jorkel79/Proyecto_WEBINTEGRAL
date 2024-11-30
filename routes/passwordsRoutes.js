@@ -7,6 +7,7 @@ router.post('/', passwordsController.addPassword);
 
 // Las demás rutas para actualizar, eliminar, etc.
 router.get('/', passwordsController.getAllPasswords);
+
 router.put('/:id', passwordsController.updatePassword);
 router.delete('/:id', passwordsController.deletePassword);
 

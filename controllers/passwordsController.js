@@ -11,9 +11,33 @@ const getAllPasswords = (req, res) => {
     });
 };
 
-// Función para agregar una nueva contraseña
-// Controlador para agregar una contraseña
-// Función para agregar una nueva contraseña
+const createPassword = (req, res) => {
+    const { minLength, maxLength, includeNumbers, includeUppercase, includeSpecial } = req.body;
+
+    // Validación de datos
+    if (!minLength || !maxLength || minLength < 4 || maxLength > 20 || minLength > maxLength) {
+        return res.status(400).json({ error: 'Datos inválidos para la longitud de la contraseña' });
+    }
+
+    // Caracteres base
+    let characters = 'abcdefghijklmnopqrstuvwxyz';
+    if (includeNumbers) characters += '0123456789';
+    if (includeUppercase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if (includeSpecial) characters += '¿?¡!-_.: *@$/';
+
+    // Generación de la contraseña
+    const passwordLength = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
+    let password = '';
+    for (let i = 0; i < passwordLength; i++) {
+        password += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+
+    // Respuesta con la contraseña generada
+    res.json({ password });
+};
+
+
+// Agregar una nueva contraseña
 const addPassword = (req, res) => {
     console.log("Datos recibidos:", req.body); // Verifica lo que se recibe
 
@@ -76,4 +100,5 @@ module.exports = {
     addPassword,
     updatePassword,
     deletePassword,
+    createPassword
 };
