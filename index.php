@@ -1,3 +1,9 @@
+<?php
+// PHP redirige al login.php (opcional, si prefieres hacerlo con PHP)
+header("Refresh: 3; url=login.php"); // Redirige después de 3 segundos
+exit;
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,7 +13,7 @@
     <script>
         // Redirige después de 3 segundos
         setTimeout(() => {
-            window.location.href = "login";
+            window.location.href = "login.html";  // Asegúrate de que la URL es correcta
         }, 3000); // 3000 ms = 3 segundos
     </script>
 </head>
