@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));  // Añadir esta línea para
 
 // Rutas de la API
 app.use('/users', usersRoutes);
-app.use('/passwords', passwordsRoutes);
+app.use('/passwords', passwordsRoutes); // La ruta para manejar las contraseñas es ahora /api/passwords
 
 // Ruta para servir index.html
 app.get('/', (req, res) => {
