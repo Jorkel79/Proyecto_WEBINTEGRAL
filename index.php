@@ -23,7 +23,7 @@
         /* Animación de desvanecimiento para el texto */
         h1 {
             font-size: 2rem;
-            color: #4CAF50; /* Verde llamativo */
+            color:blueviolet; 
             animation: fadeIn 2s ease-in-out;
             margin-bottom: 20px;
         }
@@ -31,7 +31,7 @@
         /* Efecto de animación para el mensaje */
         .message {
             font-size: 1.2rem;
-            color: #ff6347; /* Tomate color */
+            color:chocolate; 
             font-weight: bold;
             animation: pulse 1.5s infinite;
         }
