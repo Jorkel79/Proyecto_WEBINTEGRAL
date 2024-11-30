@@ -1,11 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const passwordsController = require('../controllers/passwordsController'); // Importar el controlador
+const passwordsController = require('../controllers/passwordsController');
 
-// Rutas para contraseñas
+// Ruta para agregar una contraseña
+router.post('/', passwordsController.addPassword);
+
+// Las demás rutas para actualizar, eliminar, etc.
 router.get('/', passwordsController.getAllPasswords);
-router.post('/generate', passwordsController.createPassword);
-router.post('/save', passwordsController.addPassword);
+
 router.put('/:id', passwordsController.updatePassword);
 router.delete('/:id', passwordsController.deletePassword);
 
