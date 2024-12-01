@@ -81,10 +81,6 @@ register = async (req, res) => {
 // LOGOUT
 logout = async (req, res) => {
 
-    if(err){
-        console.log("Error en el cierre de Sesion")
-    }
-
     res.json({
         message: "Cierre de Sesion Exitoso"
     });
