@@ -24,18 +24,18 @@
             <a href="./login.html" class="back-button" title="Regresar">
                 <img src="css/CerrarSesion.png" alt="Botón de regresar">
             </a>
-            <!-- Botón de salir -->
-            <a href="./login.html" class="exit-button" title="Cerrar sesión">
+            <!-- Botón de salir que activa la función de logout -->
+            <button id="logoutButton" class="exit-button" title="Cerrar sesión">
                 <img src="css/CerrarSesion.png" alt="Botón de salir">
-            </a>
+            </button>
         </div>
     </header>
 
 
     <div class="table-container">
-        
+
         <button id="add-button" class="btn" style="background-color: blueviolet;">Añadir Contraseña</button>
-        
+
         <table class="styled-table">
             <thead>
                 <tr>
@@ -58,6 +58,8 @@
 
     <!-- Enlace al archivo JavaScript -->
     <script src="./js/crud.js" defer></script>
+    <script src="./js/logout.js" defer></script>
+    
 </body>
 
 </html>
