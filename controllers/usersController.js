@@ -1,3 +1,4 @@
+
 const connection = require('../models/database');
 const db = require('../models/database');
 const bcryptjs = require('bcryptjs');
@@ -9,7 +10,6 @@ login = async (req, res) => {
 
     const query = 'SELECT * FROM `usuarios` WHERE username =?;';
 
-    // Verificar las credenciales de un usuario y responde en consecuencia.
     db.query(query, [username], async (err, results) => {
         if (err) {
             console.error('Error en la consulta:', err);
@@ -26,14 +26,13 @@ login = async (req, res) => {
                 // Generar un token JWT 
                 const token = jwt.sign(
                     { id: user.id, username: user.username },
-                    'contraseña_secreta', 
-                    { expiresIn: '7d' }  
+                    'contraseña_secreta',
+                    { expiresIn: '7d' }
                 );
 
                 // Enviar el token al cliente
                 res.json({
                     message: "Login Exitoso",
-                    data: results,
                     token: token  // Envía el token al cliente
                 });
             } else {
@@ -87,7 +86,6 @@ logout = async (req, res) => {
         message: "Cierre de Sesion Exitoso"
     });
 };
-
 
 module.exports = {
     login,

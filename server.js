@@ -12,6 +12,9 @@ const cors = require('cors');
 const usersRoutes = require('./routes/usersRoutes');
 const passwordsRoutes = require('./routes/passwordsRoutes');
 
+// Importar middleware de autenticación
+const authMiddleware = require('./js/authMiddleware');
+
 // Crear una instancia de la aplicación Express
 const app = express();
 
@@ -31,6 +34,11 @@ app.use((req, res, next) => {
 // Rutas de la API
 app.use('/users', usersRoutes);
 app.use('/passwords', passwordsRoutes);
+
+// Ruta protegida de ejemplo usando el middleware de autenticación
+app.get('/perfil', authMiddleware, (req, res) => {
+    res.json({ message: 'Acceso autorizado, datos del perfil aquí.' });
+});
 
 // Ruta para servir index.html
 app.get('/', (req, res) => {

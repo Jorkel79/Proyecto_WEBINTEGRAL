@@ -1,3 +1,4 @@
+
 console.log("register.js se está cargando correctamente.");
 document.getElementById("registerForm").addEventListener("submit", async function (e) {
     e.preventDefault(); // Previene el envío del formulario por defecto
