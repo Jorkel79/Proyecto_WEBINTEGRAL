@@ -1,5 +1,14 @@
 const apiUrl = 'http://localhost:3000/passwords'; // URL de tu API
 
+window.onload = function() {
+    const token = localStorage.getItem('token');  // Obtenemos el token almacenado
+    if (!token) {
+        // Si no hay token, redirige al login
+        alert('No has iniciado sesión. Redirigiendo al login...');
+        window.location.replace('./login.html');  // Redirige al login
+    }
+};
+
 // Configurar el botón de añadir
 document.getElementById('add-button').addEventListener('click', addRow);
 

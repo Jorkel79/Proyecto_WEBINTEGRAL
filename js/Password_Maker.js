@@ -1,4 +1,13 @@
 
+window.onload = function() {
+    const token = localStorage.getItem('token');  // Obtenemos el token almacenado
+    if (!token) {
+        // Si no hay token, redirige al login
+        alert('No has iniciado sesión. Redirigiendo al login...');
+        window.location.replace('./login.html');  // Redirige al login
+    }
+};
+
 function generatePassword() {
     console.log("Generating password...");
 
