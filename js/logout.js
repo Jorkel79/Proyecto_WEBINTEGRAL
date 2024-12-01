@@ -21,7 +21,7 @@ const logout = async () => {
 
                 // Redirigir al login
                 console.log("Cierre de sesión exitoso, redirigiendo al login...");
-                window.location.href = 'http://localhost/Proyecto_WEBINTEGRAL/login.html';
+                window.location.href = './login.html';
             } else {
                 console.log("Error en el mensaje de cierre de sesión:", data.message);
             }
