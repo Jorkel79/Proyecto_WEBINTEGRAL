@@ -1,4 +1,6 @@
-console.log("login.js se está cargando correctamente.");
+
+console.log("Login.js se está cargando correctamente.");
+
 document.getElementById('loginForm').addEventListener('submit', async function (e) {
     e.preventDefault(); // Previene el envío del formulario por defecto
 
@@ -21,12 +23,17 @@ document.getElementById('loginForm').addEventListener('submit', async function (
 
         // Manejar la respuesta del servidor
         if (response.ok) { // Verifica si la respuesta fue exitosa
+
             alert("Login Exitoso, Bienvenido!");
             console.log("Redireccionando a index.php...");
+
             //redirigir al index
             window.location.replace('http://localhost/Proyecto_WEBINTEGRAL/GenerarPassword.html');
+
         } else {
+
             alert(data.message); // Muestra el mensaje de error del servidor
+
         }
     } catch (error) {
         console.error('Error:', error);
