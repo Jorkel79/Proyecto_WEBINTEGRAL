@@ -172,3 +172,18 @@ footer a:hover {
 .btn i {
     font-size: 16px;
 }
+
+.boton-generar {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-generar:hover {
+    background-color: #530b91;
+}
