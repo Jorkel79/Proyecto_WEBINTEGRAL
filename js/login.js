@@ -24,16 +24,19 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         // Manejar la respuesta del servidor
         if (response.ok) { // Verifica si la respuesta fue exitosa
 
+            // Guardar el token en el localStorage
+            localStorage.setItem('token', data.token); // Aquí guardamos el token
+
             alert("Login Exitoso, Bienvenido!");
             console.log("Redireccionando a index.php...");
 
-            //redirigir al index
+            // Redirigir a la página principal
             window.location.replace('http://localhost/Proyecto_WEBINTEGRAL/GenerarPassword.html');
 
         } else {
 
             alert(data.message); // Muestra el mensaje de error del servidor
-
+            
         }
     } catch (error) {
         console.error('Error:', error);
