@@ -36,7 +36,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         } else {
 
             alert(data.message); // Muestra el mensaje de error del servidor
-            
+
         }
     } catch (error) {
         console.error('Error:', error);
