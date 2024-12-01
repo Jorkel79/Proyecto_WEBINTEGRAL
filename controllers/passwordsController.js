@@ -1,4 +1,5 @@
 const connection = require('../models/database'); // Importamos la conexión a la base de datos
+const db = require('../models/database');
 
 // Función para obtener todas las contraseñas
 const getAllPasswords = (req, res) => {
