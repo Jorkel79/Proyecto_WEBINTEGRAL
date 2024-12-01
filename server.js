@@ -1,3 +1,4 @@
+
 // Configurar Express
 const express = require('express');
 
@@ -35,10 +36,10 @@ app.get('/login', (req, res) => {
     res.sendFile(__dirname + '/login.html');  // Asegúrate de que login.html esté en la raíz
 });
 
-// Ruta para manejar el login (POST)
-app.post('/login', (req, res) => {
+// Ruta para manejar el login (POST) bajo /users/login
+app.post('/users/login', (req, res) => {
     const { username, password } = req.body;
-    
+
     // Aquí puedes hacer la validación del usuario (ej., consulta a base de datos)
     if (username === 'usuario' && password === 'contraseña') {
         res.send('Login exitoso');
