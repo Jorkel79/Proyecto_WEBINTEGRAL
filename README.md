@@ -82,7 +82,7 @@ POST /passwords
 PUT /passwords/:id
 DELETE /passwords/:id
 
-##👨‍💻 Autor
+## 👨‍💻 Autor
 
 Desarrollado por Jorge Raúl Valencia Santos
 Proyecto enfocado en el manejo estructurado de información sensible.
